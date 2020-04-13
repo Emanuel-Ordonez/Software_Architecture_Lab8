@@ -1,2 +1,2 @@
-public class Employee {
+public class Employee implements HReporter_IF{
 }
