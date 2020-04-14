@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class Administrator extends Employee{
-    private List<Employee> members;
+    List<Employee> members;
 
     public void seeDanger(HReporter_IF r, Hazard h){
 
