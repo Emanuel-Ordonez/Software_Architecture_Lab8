@@ -1,5 +1,9 @@
 public class DirectAdministrator extends Administrator{
 
+    public DirectAdministrator(String name) {
+        super(name);
+    }
+
     public Boolean getFeedback(Hazard h){
         return true;
     }

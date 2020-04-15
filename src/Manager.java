@@ -2,6 +2,10 @@ import java.util.List;
 
 public class Manager extends Administrator{
 
+    public Manager(String name) {
+        super(name);
+    }
+
     public List<Decision> suggestDecisions(Hazard h){
         return null;
     }
@@ -13,8 +17,8 @@ public class Manager extends Administrator{
             if(d.getFeedback(h) == false)
                 reportToCEO = false;
         }
-        if(reportToCEO && overseer != null){
-            overseer.seeDanger(this, h);
+        if(reportToCEO && this.overseer != null){
+            this.overseer.seeDanger(this, h);
         }
     }
 }

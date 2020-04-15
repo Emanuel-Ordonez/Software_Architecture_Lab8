@@ -5,4 +5,8 @@ public class Decision {
 
     public void execute(CEO commander){
     }
+
+    public Hazard getHazard(){
+        return hazard;
+    }
 }

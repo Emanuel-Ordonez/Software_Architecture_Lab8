@@ -2,6 +2,10 @@ import java.util.*;
 
 public class CEO extends Administrator{
 
+    public CEO(String name) {
+        super(name);
+    }
+
     public void seeDanger(HReporter_IF r, Hazard h){
         List<Decision> decisions = new ArrayList<Decision>();
         for(Employee e: members){

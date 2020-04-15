@@ -1,4 +1,9 @@
 public class RegularEmployee extends Employee{
+
+    public RegularEmployee(String name){
+        super(name);
+    }
+
     public void seeDanger(HReporter_IF r, Hazard h){
         if(r!=null) {
             fixIt();
