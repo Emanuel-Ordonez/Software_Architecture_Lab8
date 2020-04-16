@@ -21,11 +21,4 @@ public class Surpervisor extends DirectAdministrator{
         }
         (this.overseer).seeDanger(this, h);
     }
-
-    public void evacuate(){
-        for(Employee e: members){
-            e.evacuate();
-        }
-        this.evacuate();
-    }
 }

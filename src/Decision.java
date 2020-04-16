@@ -5,7 +5,6 @@ public class Decision {
     private Hazard hazard;
 
     public void execute(CEO commander){
-        System.out.println("Hello");
         if(hazard.getHazard_level()>3) {
             Evacuation evac = new Evacuation();
             evac.execute(commander);

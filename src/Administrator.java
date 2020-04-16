@@ -20,6 +20,6 @@ public class Administrator extends Employee{
         for(Employee e: members){
             e.evacuate();
         }
-        this.evacuate();
+        System.out.println(this.name + " has evacuated\n");
     }
 }

@@ -18,5 +18,8 @@ public class runner {
         e.setDirectOverseer(f);
 
         a.seeDanger();
+
+        Evacuation x = new Evacuation();
+        x.execute(f);
     }
 }
