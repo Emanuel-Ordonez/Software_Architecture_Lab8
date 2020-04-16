@@ -6,6 +6,10 @@ public class CEO extends Administrator{
         super(name);
     }
 
+    public void addMember(Manager manager){
+        members.add(manager);
+    }
+
     public void seeDanger(HReporter_IF r, Hazard h){
         List<Decision> decisions = new ArrayList<Decision>();
         for(Employee e: members){

@@ -6,6 +6,10 @@ public class Manager extends Administrator{
         super(name);
     }
 
+    public void addMember(DirectAdministrator direct){
+        members.add(direct);
+    }
+
     public List<Decision> suggestDecisions(Hazard h){
         return null;
     }

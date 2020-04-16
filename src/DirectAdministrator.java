@@ -4,6 +4,10 @@ public class DirectAdministrator extends Administrator{
         super(name);
     }
 
+    public void addMember(RegularEmployee reg){
+        members.add(reg);
+    }
+
     public Boolean getFeedback(Hazard h){
         return true;
     }

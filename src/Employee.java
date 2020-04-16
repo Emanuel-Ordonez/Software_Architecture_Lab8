@@ -14,7 +14,7 @@ public class Employee implements HReporter_IF{
 
     public void setDirectOverseer(HReporter_IF r){
         this.overseer = (Administrator) r;
-        //((Administrator) r).addMember(this);
+        ((Administrator) r).addMember(this);
     }
 
     public HReporter_IF getDirectOverseer(){
