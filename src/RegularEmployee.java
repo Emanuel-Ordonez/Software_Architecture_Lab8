@@ -9,7 +9,7 @@ public class RegularEmployee extends Employee{
     }
 
     public void seeDanger(HReporter_IF r, Hazard h){
-        System.out.println("Employee" + this.name + " sees danger");
+        System.out.println("Employee " + this.name + " sees danger");
         if(r!=null)
             fixIt();
         else{
