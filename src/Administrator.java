@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Administrator extends Employee{
-    List<Employee> members = new ArrayList<Employee>();
+    protected List<Employee> members = new ArrayList<Employee>();
 
     public Administrator(String name){
         super(name);
