@@ -12,14 +12,16 @@ public class CEO extends Administrator{
 
     public void seeDanger(HReporter_IF r, Hazard h){
         List<Decision> decisions = new ArrayList<Decision>();
+        System.out.println("\nCEO "+this.name+" has warned");
         for(Employee e: members){
             Manager m = (Manager)e;
-            decisions.add((Decision) m.suggestDecisions(h));
+            decisions.addAll(m.suggestDecisions(h));
         }
         implementDecision(decisions);
     }
 
     public void implementDecision(List<Decision> ds){
+        System.out.println("Implementing Decision");
         ds = sortByPriority(ds);
         int y;
 
@@ -29,21 +31,20 @@ public class CEO extends Administrator{
         else
             y=2;
 
-        Decision d = new Decision();
+        Decision d;
         for(int x=0; x<y;x++) {
             d = ds.get(x);
             if(d != null)//just in case a decision is null
                 d.execute(this);
         }
-
     }
 
     private List<Decision> sortByPriority(List<Decision> ds){
-        System.out.println("Sorted decisions");
+        System.out.println("List has been sorted decisions");
         return ds;
     }
 
     public void report(){
-
+        System.out.println("The city’s environmental department is notified");
     }
 }

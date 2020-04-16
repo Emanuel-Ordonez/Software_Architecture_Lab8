@@ -3,6 +3,11 @@ public class Hazard {
     private String desp;
     private int hazard_level;
 
+    public Hazard(String type, int hazard_level){
+        this.type = type;
+        this.hazard_level = hazard_level;
+    }
+
     public String getType() {
         return type;
     }

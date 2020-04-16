@@ -1,12 +1,21 @@
 public class RegularEmployee extends Employee{
 
-    public RegularEmployee(String name){
+    public RegularEmployee(String name) {
         super(name);
     }
 
-    public void seeDanger(){
-        System.out.println(this.name + " Employee sees danger");
-        (this.getDirectOverseer()).seeDanger(this, new Hazard()); //inform supervisor
+    public  void seeDanger(){//used to be called by main
+        this.seeDanger(null,null);
+    }
+
+    public void seeDanger(HReporter_IF r, Hazard h){
+        System.out.println("Employee" + this.name + " sees danger");
+        if(r!=null)
+            fixIt();
+        else{
+            fixIt();
+            (this.getDirectOverseer()).seeDanger(this, new Hazard("Danger",5));
+        }
     }
 
     public void evacuate() {
@@ -14,6 +23,6 @@ public class RegularEmployee extends Employee{
     }
 
     public void fixIt(){
-        System.out.println("The employee " + this.name + " is fixing it");
+        System.out.println("The employee " + this.name + " is fixing it\n");
     }
 }

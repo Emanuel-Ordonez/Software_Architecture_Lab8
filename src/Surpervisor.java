@@ -7,22 +7,23 @@ public class Surpervisor extends DirectAdministrator{
         super(name);
     }
 
-    List<RegularEmployee> members = new ArrayList<RegularEmployee>();
+    //List<RegularEmployee> members = new ArrayList<RegularEmployee>();
 
     public void addMember(RegularEmployee e){
         members.add(e);
     }
 
     public void seeDanger(HReporter_IF r, Hazard h){
-        for(RegularEmployee e: members){
-            System.out.println("hre");
-            e.fixIt();
+        System.out.println(this.name + " has been notified of Hazard\n");
+        for(Employee e: members){
+            if(e != r)
+                e.seeDanger(e,h);
         }
         (this.overseer).seeDanger(this, h);
     }
 
     public void evacuate(){
-        for(RegularEmployee e: members){
+        for(Employee e: members){
             e.evacuate();
         }
         this.evacuate();
