@@ -7,8 +7,6 @@ public class Surpervisor extends DirectAdministrator{
         super(name);
     }
 
-    //List<RegularEmployee> members = new ArrayList<RegularEmployee>();
-
     public void addMember(RegularEmployee e){
         members.add(e);
     }

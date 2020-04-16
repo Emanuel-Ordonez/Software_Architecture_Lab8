@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Manager extends Administrator{
-    List<Decision> ManagerSuggestions = new ArrayList<Decision>();
+    private List<Decision> ManagerSuggestions = new ArrayList<Decision>();
 
     public Manager(String name) {
         super(name);
@@ -12,7 +12,10 @@ public class Manager extends Administrator{
         members.add(direct);
     }
 
+    //create decisions here
     public List<Decision> suggestDecisions(Hazard h){ //problem here he gave us list to return
+        Decision as = new Decision(this,5, h);
+        ManagerSuggestions.add(as);
         return ManagerSuggestions;
     }
 

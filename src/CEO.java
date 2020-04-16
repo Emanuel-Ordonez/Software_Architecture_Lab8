@@ -45,6 +45,6 @@ public class CEO extends Administrator{
     }
 
     public void report(){
-        System.out.println("The city’s environmental department is notified");
+        System.out.println("\nThe city’s environmental department is notified");
     }
 }

@@ -18,9 +18,9 @@ public class RegularEmployee extends Employee{
         }
     }
 
-    /*public void evacuate() {
-        //this.evacuate();
-    }*/
+    public void evacuate() {
+        super.evacuate();
+    }
 
     public void fixIt(){
         System.out.println("The employee " + this.name + " is fixing it\n");

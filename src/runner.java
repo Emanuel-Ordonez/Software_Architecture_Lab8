@@ -1,3 +1,5 @@
+import java.io.File;
+
 public class runner {
 
     public static void main(String args[]){
@@ -21,5 +23,8 @@ public class runner {
 
         Evacuation x = new Evacuation();
         x.execute(f);
+
+        FileReport y = new FileReport();
+        y.execute(f);
     }
 }
