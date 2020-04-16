@@ -40,7 +40,7 @@ public class CEO extends Administrator{
     }
 
     private List<Decision> sortByPriority(List<Decision> ds){
-        System.out.println("List been sortedhas been sorted\n");
+        System.out.println("List has been sorted\n");
         return ds;
     }
 
