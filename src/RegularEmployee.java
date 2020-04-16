@@ -5,6 +5,7 @@ public class RegularEmployee extends Employee{
     }
 
     public void seeDanger(){
+        System.out.println(this.name + " Employee sees danger");
         (this.getDirectOverseer()).seeDanger(this, new Hazard()); //inform supervisor
     }
 

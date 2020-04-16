@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Manager extends Administrator{
@@ -10,7 +11,7 @@ public class Manager extends Administrator{
         members.add(direct);
     }
 
-    public List<Decision> suggestDecisions(Hazard h){
+    public Decision suggestDecisions(Hazard h){ //problem here he gave us list to return
         return null;
     }
 
@@ -22,7 +23,7 @@ public class Manager extends Administrator{
                 reportToCEO = false;
         }
         if(reportToCEO && this.overseer != null){
-            this.overseer.seeDanger(this, h);
+            (this.overseer).seeDanger(this, h);
         }
     }
 }

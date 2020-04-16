@@ -13,7 +13,7 @@ public class Administrator extends Employee{
     }
 
     public void seeDanger(HReporter_IF r, Hazard h){
-
+        System.out.println("Admin");
     }
 
     public void evacuate(){

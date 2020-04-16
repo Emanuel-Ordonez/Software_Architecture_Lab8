@@ -15,8 +15,10 @@ public class Surpervisor extends DirectAdministrator{
 
     public void seeDanger(HReporter_IF r, Hazard h){
         for(RegularEmployee e: members){
+            System.out.println("hre");
             e.fixIt();
         }
+        (this.overseer).seeDanger(this, h);
     }
 
     public void evacuate(){

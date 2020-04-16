@@ -1,7 +1,7 @@
 public class runner {
 
     public static void main(String args[]){
-        RegularEmployee a = new RegularEmployee("Ralph");
+        RegularEmployee a = new RegularEmployee("John");
         RegularEmployee b = new RegularEmployee("Fernando");
         Surpervisor c = new Surpervisor("Elise");
         ProjectLeader d = new ProjectLeader("Joseph");
@@ -16,5 +16,7 @@ public class runner {
         e.setDirectOverseer(f);
 
         System.out.println("Yay");
+
+        a.seeDanger();
     }
 }

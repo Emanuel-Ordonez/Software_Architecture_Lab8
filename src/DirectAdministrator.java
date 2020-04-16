@@ -9,9 +9,9 @@ public class DirectAdministrator extends Administrator{
     }
 
     public Boolean getFeedback(Hazard h){
-        System.out.println("Feedback by " + this.name);
+        System.out.println("Feedback from " + this.name);
         //if(h)
-            return true;
+        return true;
         //else
         //    return false;
     }

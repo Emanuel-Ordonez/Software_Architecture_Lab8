@@ -21,12 +21,21 @@ public class CEO extends Administrator{
 
     public void implementDecision(List<Decision> ds){
         ds = sortByPriority(ds);
+        int y;
 
-        Decision d = ds.get(0);
-        d.execute(this);
+        //if there aren't more decisions put limit
+        if(ds.size()<2)
+            y=ds.size();
+        else
+            y=2;
 
-        d = ds.get(1);
-        d.execute(this);
+        Decision d = new Decision();
+        for(int x=0; x<y;x++) {
+            d = ds.get(x);
+            if(d != null)//just in case a decision is null
+                d.execute(this);
+        }
+
     }
 
     private List<Decision> sortByPriority(List<Decision> ds){

@@ -5,6 +5,13 @@ public class Decision {
     private Hazard hazard;
 
     public void execute(CEO commander){
+    if(hazard!=null) {
+        Evacuation evac = new Evacuation();
+        evac.execute(commander);
     }
-
+    else {
+        FileReport file = new FileReport();
+        file.execute(commander);
+    }
+    }
 }

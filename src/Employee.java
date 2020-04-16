@@ -1,4 +1,4 @@
-public class Employee implements HReporter_IF{
+public abstract class Employee implements HReporter_IF{
     protected String name;
     protected Administrator overseer;
 
