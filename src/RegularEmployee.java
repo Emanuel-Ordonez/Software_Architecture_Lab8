@@ -4,14 +4,8 @@ public class RegularEmployee extends Employee{
         super(name);
     }
 
-    public void seeDanger(HReporter_IF r, Hazard h){
-        if(r!=null) {
-            fixIt();
-        }
-        else{
-            fixIt();
-            //overseer.seeDanger(this,new Hazard());
-        }
+    public void seeDanger(){
+        (this.getDirectOverseer()).seeDanger(this, new Hazard()); //inform supervisor
     }
 
     public void evacuate() {
@@ -19,6 +13,6 @@ public class RegularEmployee extends Employee{
     }
 
     public void fixIt(){
-        System.out.println("Fixing it");
+        System.out.println("The employee " + this.name + " is fixing it");
     }
 }

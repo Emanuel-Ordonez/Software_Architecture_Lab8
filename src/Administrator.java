@@ -12,7 +12,9 @@ public class Administrator extends Employee{
         members.add(e);
     }
 
-    //public void seeDanger(HReporter_IF r, Hazard h){ }
+    public void seeDanger(HReporter_IF r, Hazard h){
+
+    }
 
     public void evacuate(){
         for(Employee e: members){

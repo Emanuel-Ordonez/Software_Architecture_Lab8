@@ -9,7 +9,11 @@ public class DirectAdministrator extends Administrator{
     }
 
     public Boolean getFeedback(Hazard h){
-        return true;
+        System.out.println("Feedback by " + this.name);
+        //if(h)
+            return true;
+        //else
+        //    return false;
     }
 
     public void seeDanger(HReporter_IF r, Hazard h){

@@ -7,9 +7,11 @@ public class Employee implements HReporter_IF{
     }
 
     public void seeDanger(HReporter_IF r, Hazard h){
+
     }
 
     public void evacuate(){
+        System.out.println("The employee " + this.name + " is evacuating");
     }
 
     public void setDirectOverseer(HReporter_IF r){
