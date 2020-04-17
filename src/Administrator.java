@@ -21,5 +21,6 @@ public class Administrator extends Employee{
             e.evacuate();
         }
         super.evacuate();//calls the super meathod evacuate
+        System.out.println();
     }
 }
