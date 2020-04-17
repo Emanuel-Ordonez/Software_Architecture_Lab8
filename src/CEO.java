@@ -34,8 +34,10 @@ public class CEO extends Administrator{
         Decision d;
         for(int x=0; x<y;x++) {
             d = ds.get(x);
-            if(d != null)//just in case a decision is null
+            if(d != null) {//just in case a decision is null
                 d.execute(this);
+                return ;
+            }
         }
     }
 

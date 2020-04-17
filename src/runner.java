@@ -1,5 +1,3 @@
-import java.io.File;
-
 public class runner {
 
     public static void main(String args[]){
