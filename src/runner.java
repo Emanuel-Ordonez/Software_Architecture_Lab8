@@ -1,5 +1,4 @@
 public class runner {
-
     public static void main(String args[]){
         Surpervisor s1 = new Surpervisor("Jack");
         Surpervisor s2 = new Surpervisor("Jeff");
